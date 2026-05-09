@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA CALCULATOR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>CGPA CALCULATOR</h1>
+    </header>
+
+    <div class="container">
+      <div class="Grade">
+        <h3>Grade System</h3>
+
+        <table>
+          <tr>
+            <th>Marks</th>
+            <th>Grade</th>
+            <th>Points</th>
+          </tr>
+
+          <tr>
+            <td>90-100</td>
+            <td>O</td>
+            <td>10</td>
+          </tr>
+
+          <tr>
+            <td>80-89</td>
+            <td>A+</td>
+            <td>9</td>
+          </tr>
+
+          <tr>
+            <td>70-79</td>
+            <td>A</td>
+            <td>8</td>
+          </tr>
+
+          <tr>
+            <td>60-69</td>
+            <td>B+</td>
+            <td>7</td>
+          </tr>
+
+          <tr>
+            <td>50-59</td>
+            <td>B</td>
+            <td>6</td>
+          </tr>
+
+          <tr>
+            <td>40-49</td>
+            <td>C</td>
+            <td>5</td>
+          </tr>
+
+          <tr>
+            <td>0-39</td>
+            <td>F</td>
+            <td>0</td>
+          </tr>
+        </table>
+      </div>
+      <div class="privious">
+        <h2>Privious CGPA Detalis :</h2>
+        <br />
+        <label>CGPA : </label>
+        <input
+          type="number"
+          class="box"
+          id="prvgpa"
+          step="0.1"
+          placeholder="Enter Your CGPA"
+        />
+        <label class="ptc">Total Credits : </label>
+        <input
+          type="number"
+          class="ptc , box"
+          id="prvcredit"
+          step="1"
+          placeholder="Enter Total Credits"
+        />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <div class="current">
+          <label>
+            <h4>Total subjects in this semester :</h4>
+          </label>
+          <input
+            type="number"
+            class="box"
+            id="numsubject"
+            step="1"
+            placeholder="Enter Total Subjects"
+          />
+
+          <button class="generate box" onclick="generatesubject()">
+            Enter Detalis
+          </button>
+          <script src="script.js"></script>
+          <div class="subject transition"></div>
+      </div>
+      <div class="result"></div>
+    </div>
+    </div>
+    <div class="watermark">
+  Ghanshyam Ambaliya
+</div>
+     
+  </body>
+</html>
